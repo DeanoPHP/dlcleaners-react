@@ -111,6 +111,11 @@ button {
         margin-top: 0px;
     }
 
+    .about {
+        width: 98%;
+        margin: 0 auto;
+    }
+
     .cards-container {
         display: none;
     }
