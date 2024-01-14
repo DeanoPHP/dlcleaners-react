@@ -1,3 +1,6 @@
+import { useState } from "react"
+import Alert from "../utils/Alert"
+
 function Services() {
   return (
     <div className="constainer-main">
@@ -5,7 +8,7 @@ function Services() {
       
       <div className="accordion">
         <div className="collapse collapse-plus bg-base-200">
-          <input type="radio" name="my-accordion-3" checked="checked" /> 
+          <input type="radio" name="my-accordion-3" /> 
           <div className="collapse-title text-xl font-medium p-10">
             Domestic Cleaning
           </div>
@@ -14,7 +17,7 @@ function Services() {
           </div>
         </div>
         <div className="collapse collapse-plus bg-base-200">
-          <input type="radio" name="my-accordion-3" /> 
+        <input type="radio" name="my-accordion-3" /> 
           <div className="collapse-title text-xl font-medium p-10">
             Commercial Cleaning
           </div>
@@ -32,7 +35,8 @@ function Services() {
           </div>
         </div>
       </div>
-      
+
+      {<Alert />}
     </div>
   )
 }
